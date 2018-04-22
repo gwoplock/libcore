@@ -17,20 +17,20 @@ PACKAGE_STRING					= $(PACKAGE_NAME) $(PACKAGE_VERSION)
 PACKAGE_BUGREPORT				= support@lavabit.com
 PACKAGE_URL						= https://lavabit.com
 
-MAGMA_PROGRAM					= $(addsuffix $(EXEEXT), magmad)
-MAGMA_CHECK_PROGRAM				= $(addsuffix $(EXEEXT), magmad.check)
-MAGMA_SHARED_LIBRARY			= $(addsuffix $(DYNLIBEXT), magmad)
+MAGMA_PROGRAM					= $(addsuffix $(EXEEXT), libcore)
+MAGMA_CHECK_PROGRAM				= $(addsuffix $(EXEEXT), libcore.check)
+MAGMA_SHARED_LIBRARY			= $(addsuffix $(DYNLIBEXT), libcore)
 
-MAGMA_PROGRAM_GPROF				= $(addsuffix $(EXEEXT), magmad.gprof)
-MAGMA_CHECK_PROGRAM_GPROF		= $(addsuffix $(EXEEXT), magmad.check.gprof)
+MAGMA_PROGRAM_GPROF				= $(addsuffix $(EXEEXT), libcore.gprof)
+MAGMA_CHECK_PROGRAM_GPROF		= $(addsuffix $(EXEEXT), libcore.check.gprof)
 
-MAGMA_PROGRAM_PPROF				= $(addsuffix $(EXEEXT), magmad.pprof)
-MAGMA_CHECK_PROGRAM_PPROF		= $(addsuffix $(EXEEXT), magmad.check.pprof)
+MAGMA_PROGRAM_PPROF				= $(addsuffix $(EXEEXT), libcore.pprof)
+MAGMA_CHECK_PROGRAM_PPROF		= $(addsuffix $(EXEEXT), libcore.check.pprof)
 
-DIME_PROGRAM					= $(addsuffix $(EXEEXT), dime)
-SIGNET_PROGRAM					= $(addsuffix $(EXEEXT), signet)
-GENREC_PROGRAM					= $(addsuffix $(EXEEXT), genrec)
-DIME_CHECK_PROGRAM				= $(addsuffix $(EXEEXT), dime.check)
+#DIME_PROGRAM					= $(addsuffix $(EXEEXT), dime)
+#SIGNET_PROGRAM					= $(addsuffix $(EXEEXT), signet)
+#GENREC_PROGRAM					= $(addsuffix $(EXEEXT), genrec)
+#DIME_CHECK_PROGRAM				= $(addsuffix $(EXEEXT), dime.check)
 
 # Source Files
 BUILD_SRCFILES					= src/engine/status/build.c
